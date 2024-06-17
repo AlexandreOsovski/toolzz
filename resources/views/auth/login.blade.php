@@ -71,8 +71,8 @@
                                         fill="#585858" />
                                 </svg>
                             </span>
-                            <input type="text" name="user" required class="input" placeholder="Digite o usuário..."
-                                autocomplete="off" />
+                            <input type="text" name="user" value="user.toolzz.teste" required class="input"
+                                placeholder="Digite o usuário..." autocomplete="off" />
                         </div>
                     </div>
                     <label class="senha">Senha</label>
@@ -86,7 +86,7 @@
                                         fill="#585858" />
                                 </svg>
                             </span>
-                            <input type="text" required name="password" class="input mt-0"
+                            <input type="text" required value="senha1234" name="password" class="input mt-0"
                                 placeholder="Digite a senha..." autocomplete="off" />
                         </label>
                     </div>
