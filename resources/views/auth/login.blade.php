@@ -114,7 +114,7 @@
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <button type="submit" class="login100-form-btn text-center">
+                        <button id="btn-text" type="submit" class="btn-send login100-form-btn text-center">
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17"
                                 fill="none" class="mr-2">
                                 <path
@@ -123,6 +123,11 @@
                             </svg>
                             <span> Entrar</span>
                         </button>
+                        <div id="spinner" class="btn color-white login100-form-btn btn-send">
+                            <span style="font-size: 15px;">
+                                <div style="background-image: url(images/icons/loader.svg)"></div>
+                            </span>
+                        </div>
                     </div>
 
                     <p class="text-center mt-md-5 esqueceu-senha">Esqueceu sua senha? <a href="#">Recupere sua

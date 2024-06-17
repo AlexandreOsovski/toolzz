@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <meta name="robots" content="noindex, follow">
 </head>
@@ -46,6 +47,16 @@
                 errorMsgs[0].parentNode.removeChild(errorMsgs[0]);
             }
         };
+    </script>
+
+    <script>
+        $('#spinner').hide();
+        $(document).ready(function() {
+            $('.btn-send').click(function() {
+                $('#spinner').prop('disabled', true).show();
+                $('#btn-text').hide();
+            });
+        });
     </script>
 </body>
 
