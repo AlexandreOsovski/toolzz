@@ -26,9 +26,9 @@ class UserFactory extends Factory
         return [
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
-            'user' => fake()->userName(),
+            'user' => "user.toolzz.teste",
             'email_verified_at' => now(),
-            'password' => password_hash('password', PASSWORD_DEFAULT),
+            'password' => password_hash('senha1234', PASSWORD_DEFAULT),
             'remember_token' => Str::random(10),
         ];
     }
