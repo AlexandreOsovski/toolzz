@@ -15,7 +15,7 @@ Antes de começar, verifique se o seu ambiente de desenvolvimento atende aos seg
 
 ### Clone o repositório
 
-git clone https://github.com/AlexandreOsovski/toolzz
+[git clone https://github.com/AlexandreOsovski/toolzz](https://github.com/AlexandreOsovski/toolzz.git)
 
 ## Entre no projeto
 cd toolzz
