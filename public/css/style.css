@@ -160,7 +160,7 @@ iframe {
     width: 692px;
     min-height: 100vh;
     display: block;
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
     padding: 70px 50px 55px;
 }
 
@@ -457,7 +457,7 @@ input.input100 {
         font-weight: 600;
         line-height: 24px;
         text-align: left;
-        color: #0E0E0E;
+        /* color: #0E0E0E; */
 
     }
 
@@ -467,7 +467,7 @@ input.input100 {
         align-items: flex-end;
         flex-direction: row;
         margin-top: -56px;
-        border-bottom: 1px solid #0000001A;
+        /* border-bottom: 1px solid #0000001A; */
     }
 
     .criar-conta-mobile div button {
@@ -476,7 +476,7 @@ input.input100 {
 
     .opcoes-abaixo {
         margin-bottom: 3rem !important;
-        color: #585858;
+        /* color: #585858; */
         font-family: Inter;
         font-size: 16px;
         font-weight: 500;
@@ -493,7 +493,7 @@ input.input100 {
         font-weight: 200;
         line-height: 27px;
         text-align: left;
-        color: #585858;
+        /* color: #585858; */
 
     }
 
@@ -531,8 +531,6 @@ input.input100 {
 }
 
 
-/* Estilos existentes ... */
-
 .secao-destaque {
     background-image: url('../images/088e5938770b5dba8d9f164aeb9bc062.jpeg');
     background-size: cover;
@@ -543,12 +541,6 @@ input.input100 {
     justify-content: center;
     flex-direction: column;
 }
-
-/* .secao-destaque .container {
-    width: 80%;
-    padding: 30px;
-
-} */
 
 .secao-destaque .row {
     display: flex;
@@ -591,6 +583,75 @@ input.input100 {
     line-height: 28px;
     text-align: left;
 
+}
+
+.login100-form.light-mode {
+    background-color: #f0f0f0;
+
+}
+
+.login100-form.dark-mode .criar-conta {
+    color: #FFFFFF !important;
+}
+
+.login100-form.light-mode .criar-conta {
+    color: #000000 !important;
+}
+
+.login100-form.dark-mode .criar-conta-mobile {
+    border-bottom: 1px solid #FFFFFF1A;
+}
+
+.login100-form.light-mode .criar-conta-mobile {
+    border-bottom: #151515;
+}
+
+.login100-form.light-mode .custom-button-register {
+    border: 1px solid #151515;
+
+}
+
+
+.login100-form.dark-mode {
+    background-color: rgb(36, 36, 36) !important;
+
+}
+
+.login100-form.dark-mode,
+a,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+usuario,
+senha,
+.wrap-input100 {
+    color: #EDEDED !important;
+}
+
+.login100-form.dark-mode,
+.custom-button-register {
+    border: 1px solid #EDEDED;
+}
+
+.login100-form.dark-mode .line {
+    background-color: #FFFFFF1A !important;
+}
+
+.login100-form.dark-mode .esqueceu-senha {
+    color: #909090 !important;
+}
+
+.login100-form.dark-mode .esqueceu-senha a {
+    color: #0761E2 !important;
+}
+
+.login100-form.light-mode .esqueceu-senha a {
+    color: #0761E2 !important;
 }
 
 body {
@@ -638,9 +699,6 @@ body {
 
 }
 
-.esqueceu-senha a {
-    color: #0761E2;
-}
 
 .titulo-secao {
     border-radius: 16px;
@@ -656,9 +714,6 @@ body {
     font-weight: 400;
     line-height: 22.4px;
     text-align: left;
-
-
-    color: #0E0E0E;
 }
 
 .form-check-label {
@@ -678,23 +733,14 @@ body {
     /* Espaçamento acima dos botões */
 }
 
-.custom-button {
+.custom-button-register {
     width: 100%;
     height: 48px;
     /* Altura dos botões */
     background-size: cover;
-    border: 1px solid #151515;
     border-radius: 8px;
 }
 
-/* .container {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .label {
     position: relative;

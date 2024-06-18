@@ -21,7 +21,7 @@
 </head>
 
 
-<body style="background-color: rgb(250, 250, 250)">
+<body>
     @yield('content')
 
 
@@ -57,7 +57,60 @@
                 $('#btn-text').hide();
             });
         });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const body = document.querySelector('form');
+            const darkModeButton = document.querySelector('#dark-mode-button');
+            const logo = document.querySelector('.logo_toolzz');
+            const img_darkmode = document.querySelector('#img-dark-mode');
+            const tz_icon = document.querySelector('#tz_icon');
+            const facebook_icon = document.querySelector('#facebook_icon');
+            const apple_icon = document.querySelector('#apple_icon');
+            const twitter_icon = document.querySelector('#twitter_icon');
+            const btn_button_mobile = document.querySelector('#btn_button_mobile');
+
+            if (darkModeButton) {
+                darkModeButton.addEventListener('click', function() {
+                    const currentMode = body.classList.contains('dark-mode') ? 'light-mode' : 'dark-mode';
+                    body.classList.remove('dark-mode', 'light-mode');
+                    body.classList.add(currentMode);
+
+                    updateLogo(currentMode);
+                    localStorage.setItem('mode', currentMode);
+                });
+
+                const savedMode = localStorage.getItem('mode');
+                if (savedMode) {
+                    body.classList.remove('dark-mode', 'light-mode');
+                    body.classList.add(savedMode);
+                    updateLogo(savedMode);
+                }
+            }
+
+            function updateLogo(mode) {
+                if (mode === 'dark-mode') {
+                    logo.src = '/images/icons/toolzz-darkmode.svg';
+                    img_darkmode.src = '/images/icons/active-button-dark-mode.svg';
+                    tz_icon.src = '/images/icons/tz-dark-mode.svg';
+                    facebook_icon.src = '/images/icons/facebook-dark-mode.svg';
+                    apple_icon.src = '/images/icons/apple-dark-mode.svg';
+                    twitter_icon.src = '/images/icons/twitter-dark-mode.svg';
+                    btn_button_mobile.data = '/images/icons/icon-button-light.svg';
+                } else {
+                    logo.src = '/images/Logo.svg';
+                    img_darkmode.src = 'images/icons/icon-button-dark-mode.svg';
+
+                    tz_icon.src = '/images/icons/tz.svg';
+                    facebook_icon.src = '/images/icons/facebook.svg';
+                    apple_icon.src = '/images/icons/apple.svg';
+                    twitter_icon.src = '/images/icons/twitter.svg';
+                    btn_button_mobile.data = '/images/icons/icon-button-dark.svg';
+                }
+            }
+        });
     </script>
+
+
 </body>
 
 </html>
